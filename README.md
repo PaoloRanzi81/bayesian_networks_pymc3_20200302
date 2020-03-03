@@ -26,7 +26,7 @@ OUTPUT:  pickled bayesian model ( .joblib); pickled MCMC traces (to be used late
 (it computes DAG from the results of single edge linear regressions. In a nutshell, it takes the slope for the interaction between 2 nodes and it plots
 it after selecting the strongest causal relationships by thresholding):
 SCRIPT NAME: '02_analysis_graph_20200202.py'
-INPUT: '01_analysis_20200202.py' + pickled bayesian model ( .joblib);
+INPUT: '01_analysis_20200202.py' + pickled bayesian model ( .joblib) + mask_edges_to_nodes.csv;
 OUTPUT: DAG in a .pdf format; 
 
 
